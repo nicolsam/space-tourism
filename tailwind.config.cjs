@@ -5,7 +5,14 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    letterSpacing: {
+      widest: '.23em'
+    },
+    extend: {
+      blur: {
+        super: '81.55px'
+      }
+    },
   },
   plugins: [],
 }
