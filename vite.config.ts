@@ -14,6 +14,7 @@ export default defineConfig({
       { find: "@components", replacement: path.resolve(__dirname, './src/components')},
       { find: "@contexts", replacement: path.resolve(__dirname, './src/contexts')},
       { find: "@pages", replacement: path.resolve(__dirname, './src/pages')},
+      { find: "@icons", replacement: path.resolve(__dirname, './icons')},
       { find: "@images", replacement: path.resolve(__dirname, '/images')}
     ]
   }
