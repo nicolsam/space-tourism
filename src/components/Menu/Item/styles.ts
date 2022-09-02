@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Title = styled.div`
+interface TitleProps {
+ active: boolean;
+}
+
+export const Title = styled.div<TitleProps>`
 
   font-family: 'Barlow Condensed', sans-serif;
 
@@ -8,12 +12,12 @@ export const Title = styled.div`
     content: '';
     display: block;
     height: .2rem;
-    width: 0;
-    background: transparent;
+    width: ${({ active }) => active ? '100%;' : '0;' };
+    background: ${({ active }) => active ? '#fff;' : 'transparent;' };
     transition: width .5s ease, background-color .5s ease;
   }
   &:hover::after {
     width: 100%;
-    background: #fff;
+    background: #8b8a90;
   }
 `;
