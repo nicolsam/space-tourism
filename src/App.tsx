@@ -1,3 +1,5 @@
+import { useEffect} from 'react';
+
 import { Routes, Route } from 'react-router-dom';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -14,12 +16,15 @@ function App() {
 
   const location = useLocation();
   const pathname = location.pathname.split('/')[1];
-  console.log(pathname)
+
+  useEffect(() => {
+    console.log(pathname);
+  }, [location.pathname])
 
   return (
     <div className="App flex flex-row">
 
-      <GlobalStyle location={pathname} />
+      <GlobalStyle location={pathname === '' ? 'home' : pathname} />
       <div className="hidden xl:block xl:w-1/12 h-screen">
         <div className="h-1/6 flex justify-center items-center">
           <Link to="/" className="h-fit cursor-pointer">
@@ -32,7 +37,7 @@ function App() {
         <Header />
 
         <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/destination" element={<Destination destination={data.destinations[0]} />} />
             
             {data.destinations.map((destination) => (
