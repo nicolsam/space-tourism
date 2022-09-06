@@ -1,5 +1,3 @@
-import { useEffect} from 'react';
-
 import { Routes, Route } from 'react-router-dom';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -16,10 +14,6 @@ function App() {
 
   const location = useLocation();
   const pathname = location.pathname.split('/')[1];
-
-  useEffect(() => {
-    console.log(pathname);
-  }, [location.pathname])
 
   return (
     <div className="App flex flex-row">
