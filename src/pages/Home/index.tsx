@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as S from './styles';
 
-import './index.css';
-
 const Home = () => {
     return (
         <div className="h-5/6 xl:pr-52 xl:py-40 relative flex flex-col gap-36 xl:gap-0 xl:flex-row justify-center items-center xl:items-end">

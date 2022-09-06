@@ -2,7 +2,6 @@ import { Link, useLocation } from 'react-router-dom';
 
 import * as data from '@assets/data.json';
 import * as S from './styles';
-import  './index.css';
 
 interface Destination {
   name: string;
