@@ -9,6 +9,6 @@ export default {
 
 export const Moon: ComponentStory<typeof Item> = () => (
   <Router>
-    <Item link="moon">Moon</Item>
+    <Item link="moon" active='/moon'>Moon</Item>
   </Router>
 );
