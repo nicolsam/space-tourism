@@ -19,7 +19,7 @@ const Home = () => {
             </div>
             <div className="w-3/5 flex justify-center items-center xl:justify-end xl:items-end">
                 <S.Explore className="w-60 h-60 xl:w-64 xl:h-64 2xl:w-72 2xl:h-72 rounded-full">
-                    <Link to="/destination" className="w-full h-full bg-white rounded-full cursor-pointer flex justify-center items-center">
+                    <Link to="/destination/moon" className="w-full h-full bg-white rounded-full cursor-pointer flex justify-center items-center">
                         <S.ExploreText className="uppercase text-3xl tracking-widest">explore</S.ExploreText>
                     </Link>
                 </S.Explore>
