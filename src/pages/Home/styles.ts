@@ -12,6 +12,10 @@ export const Space = styled.span`
   @media (max-width: 1280px) {
     font-size: 9.375rem; /* 150px */
   }
+
+  @media (max-width: 375px) {
+    font-size: 5rem;
+  }
 `;
 
 export const Description = styled.p`
