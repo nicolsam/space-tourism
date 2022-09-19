@@ -20,6 +20,9 @@ module.exports = {
       colors: {
         'cgray': '#D0D6F9'
       },
+      screens: {
+        '3xl': '1728px'
+      },
     },
   },
   plugins: [],
