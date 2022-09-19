@@ -23,8 +23,8 @@ const Destination = ({ destination }: DestinationProps) => {
   const location = useLocation();
   
   return (
-    <div className="h-5/6 pt-8 xl:pl-0 2xl:pr-52 flex flex-col gap-12 xl:gap-24 justify-center items-center">
-        <div className="h-fit pl-12 xl:pl-0 xl:w-full uppercase self-start">
+    <div className="h-full flex flex-col gap-12 xl:gap-24">
+        <div className="h-fit mt-8 xl:mt-20 pl-12 xl:pl-0 xl:w-full uppercase self-start">
           <h1 className="font-barlowcondensed text-white text-xl xl:text-3xl tracking-widest flex flex-row gap-8"><span className="text-white/25 font-bold">01</span>pick your destination</h1>
         </div>
         <div className="w-full px-20 xl:px-0 xl:pl-20 gap-12 flex flex-col xl:flex-row justify-center xl:justify-end items-center xl:items-start">
