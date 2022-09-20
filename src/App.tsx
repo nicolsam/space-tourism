@@ -47,6 +47,10 @@ function App() {
                 <Route path={`/crew/${convertStringToSlug(crewmate.name)}`} element={<Crew crewmate={crewmate} />} />
               ))}
 
+              {data.technology.map((technology) => (
+                <Route path={`/technology/${convertStringToSlug(technology.name)}`} element={<Technology technology={technology} />} />
+              ))}
+
           </Routes> 
         </div>
       </main>
