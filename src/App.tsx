@@ -38,6 +38,8 @@ function App() {
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/destination" element={<Destination destination={data.destinations[0]} />} />
+              <Route path="/crew" element={<Crew crewmate={data.crew[0]} />} />
+              <Route path="/technology" element={<Technology technology={data.technology[0]} />} />
               
               {data.destinations.map((destination) => (
                 <Route path={`/destination/${destination.name.toLowerCase()}`} element={<Destination destination={destination} />} />
