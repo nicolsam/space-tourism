@@ -42,18 +42,18 @@ const Crew = ({ crewmate }: CrewProps) => {
 
     return (
         <div className="h-full flex flex-col gap-12 xl:gap-24 relative items-center">
-            <div className="w-full mt-8 xl:mt-20 h-fit pl-12 xl:pl-0 uppercase self-start">
-                <h1 className="font-barlowcondensed text-white text-xl xl:text-3xl tracking-widest flex flex-row gap-8"><span className="text-white/25 font-bold">02</span>meet your crew</h1>
+            <div className="w-full md:w-auto h-fit mt-8 xl:mt-20 md:pl-12 xl:pl-0 xl:w-full uppercase self-start">
+                <h1 className="font-barlowcondensed text-white text-base md:text-xl xl:text-3xl tracking-widest flex flex-row justify-center md:justify-start gap-4 md:gap-8"><span className="text-white/25 font-bold">02</span>meet your crew</h1>
             </div>
-            <div className="h-full flex flex-col xl:flex-row items-center relative">
-                <div className="h-2/6 w-2/3 xl:h-full flex flex-col justify-start xl:justify-center items-center xl:items-start relative">
-                    <div className="flex flex-col gap-3 xl:gap-5 2xl:mb-32">
-                        <h2 className="text-center xl:text-left font-bellefair md:text-2xl xl:text-4xl uppercase text-[#919096]">{crewmate.role}</h2>
-                        <h1 className="text-center xl:text-left font-bellefair md:text-4xl xl:text-6xl uppercase text-white">{crewmate.name}</h1>
-                        <p className="text-center xl:text-left font-barlow md:text-lg xl:text-xl text-cgray xl:w-1/2">{crewmate.bio}</p>
+            <div className="h-fit md:h-full flex gap-10 md:gap-0 flex-col-reverse md:flex-col xl:flex-row justify-start items-center md:relative">
+                <div className="h-5/6 md:h-2/6 md:w-2/3 xl:h-full flex gap-8 md:gap-0 flex-col-reverse md:flex-col justify-center md:justify-start xl:justify-center items-center xl:items-start md:relative">
+                    <div className="flex flex-col gap-0 xl:gap-5 2xl:mb-32 items-center md:items-start">
+                        <h2 className="text-center xl:text-left font-bellefair text-lg md:text-2xl xl:text-4xl uppercase text-[#919096] mb-1 md:mb-0">{crewmate.role}</h2>
+                        <h1 className="text-center xl:text-left font-bellefair text-2xl md:text-4xl xl:text-6xl uppercase text-white mb-4 md:mb-0">{crewmate.name}</h1>
+                        <p className="text-center xl:text-left font-barlow md:text-lg xl:text-xl text-cgray w-[90%] xl:w-1/2">{crewmate.bio}</p>
                     </div>
                     
-                    <div className="flex flex-row md:items-center xl:items-start gap-5 absolute bottom-10 xl:bottom-20">
+                    <div className="flex flex-row md:items-center xl:items-start gap-5 md:absolute md:bottom-10 xl:bottom-20">
                         {data.crew.map((crewmate) => (
                             <Link to={`/crew/${convertStringToSlug(crewmate.name)}`}>
                                 <S.PersonDot active={activedPerson(crewmate.name)}></S.PersonDot>
@@ -61,8 +61,10 @@ const Crew = ({ crewmate }: CrewProps) => {
                         ))} 
                     </div>
                 </div>
-                <div className="h-4/6 xl:h-full w-2/4 xl:w-1/3 relative flex items-center xl:items-end xl:self-end">
-                    <img className="absolute" src={crewmate.images.png} alt="Crewmate image" />
+                
+                <div className="w-full md:h-4/6 xl:h-full md:w-2/4 xl:w-1/3 md:relative flex flex-col items-center xl:items-end xl:self-end">
+                    <img className="w-1/2 md:absolute" src={crewmate.images.png} alt="Crewmate image" />
+                    <S.Divider />
                 </div>
             </div>
         </div>

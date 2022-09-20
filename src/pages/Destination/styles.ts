@@ -28,16 +28,9 @@ export const DestinationLink = styled.div<DestinationProps>`
     width: 100%;
     background: #8b8a90;
   }
-`;
 
-export const DestinationTitle = styled.h1`
-  font-size: 5rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: 'Bellefair', sans-serif, 'Open Sans';
-
-  @media (min-width: 1280px) {
-    font-size: 8rem;
+  @media (max-width: 375px) {
+    font-size: 1rem;
   }
 
 `;
@@ -49,4 +42,11 @@ export const Divider = styled.div`
 
   margin-top: 3.5rem;
   margin-bottom: 1.8rem;
+
+  @media (max-width: 375px) {
+    width: 90%;
+    margin: 1.5rem 0;
+    height: 1px;
+  }
+
 `;

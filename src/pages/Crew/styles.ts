@@ -20,3 +20,21 @@ export const PersonDot = styled.div<PersonDotProps>`
     transition: background .3s;
   }
 `;
+
+export const Divider = styled.div`
+  
+  display: none;
+  width: 0%;
+  height: 2px;
+  background: #383B4B;
+
+  transition: width .5s;
+
+  @media (max-width: 375px) {
+    display: block;
+
+    width: 90%;
+    transition: width .5s;
+  }
+
+`;
