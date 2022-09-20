@@ -1,81 +1,31 @@
-#### 0.0.0 (2022-09-20)
+# Changelog
 
-##### Chores
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-*  ignore vercel folder (1bd2763d)
-*  moved favicon path (ae5ca6dd)
+## 0.0.0 (2022-09-20)
 
-##### New Features
 
-*  sublink used to redirect page (1509d9ba)
-*  active item on menu (b6bc166e)
-*  active item (c3214544)
-*  react router dom feature (29666690)
+### Features
 
-##### Bug Fixes
+* active item ([c321454](https://github.com/nicolsam/space-tourism/commit/c32145444c06030b517f9fbda4a4d5a038ec6aa5))
+* active item on menu ([b6bc166](https://github.com/nicolsam/space-tourism/commit/b6bc166ebf26ec3c7efb00fa166eeac066045835))
+* react router dom feature ([2966669](https://github.com/nicolsam/space-tourism/commit/2966669005a44109b16642746639c927401b040b))
+* sublink used to redirect page ([1509d9b](https://github.com/nicolsam/space-tourism/commit/1509d9ba245ce75597fb5a5f9f5c383014bdb845))
 
-*  crew images position on desktop devices (cd7bc18a)
-*  mobile menu not sending to correct link (d24c8134)
-*  default pages (d9c53403)
-*  menu not appearing on tablet and mobile devices (29b5a260)
-*  dynamic background image (e179b151)
-*  dynamic background image (3d83cca6)
-*  dynamic background image (fe791f56)
-*  public imports (14b0ed44)
-*  public imports (25c0e08a)
-*  active prop (7a81abf9)
-*  assets to images (d5a6a47c)
-*  Explore link to /destination/moon (0c9dffd4)
-*  current active menu item (2e1d6599)
-*  react-router-dom 404 error on page reload (d4d9e619)
 
-##### Other Changes
+### Bug Fixes
 
-*  technology page content and styles (b26ebebd)
-*  technology sublink (4be37d5e)
-*  technology page route (2af851e9)
-*  technology page (07a17e94)
-*  crew page (8c212d8a)
-*  mobile menu (7aa3398d)
-*  mobile menu (adc60547)
-*  interface for mobile menu options (16fa0c9a)
-*  absolute import to utils folder (3a0d2e23)
-*  utility folder (00945c65)
-*  Destination page (ed7d3862)
-*  destionations (ee960ef2)
-*  data used to dynamic content (7ba7848e)
-*  font families and custom gray color (66b9d505)
-*  assets to images (aa29862f)
-*  Home Page (e38e0910)
-*  icon and row (4e1391b8)
-*  absolute import for icons path (055f7e2f)
-*  shared icons (d82a0b22)
-*  dynamic page contents (751313c8)
-*  header component and home page router (e8b597fc)
-*  home page (f9248f12)
-*  header component (3ce720da)
-*  menu component (78471283)
-*  menu item component (6a0f82fc)
-*  storybook (863e1f32)
-*  storybook and types for styled components (e1b51db3)
-*  absolute imports (1e6ebabb)
-*  absolute imports (653a4fa2)
-*  heroku deploy (9708173a)
-*  initial configurations (dd18a06c)
-
-##### Code Style Changes
-
-*  better responsive design (660aa161)
-*  hover states (90ba3b4c)
-*  better responsive design (b3a6a244)
-*  better responsive design (482bf4c7)
-*  better responsive design (7071a84f)
-*  better responsive design (fff04832)
-*  custom 3xl viewport size (db29054d)
-*  icon for desktop version (d12798c1)
-*  background image for tablet and desktop version (a78c4034)
-*  Barlow font (60b1a1f8)
-*  favicon (3fd02823)
-*  custom letter spacing and blur (f48c8b3d)
-*  Bellefair and Barlow fonts (38223121)
-
+* active prop ([7a81abf](https://github.com/nicolsam/space-tourism/commit/7a81abf9c4f138832c3d2168af36a4ad4791cb74))
+* assets to images ([d5a6a47](https://github.com/nicolsam/space-tourism/commit/d5a6a47c7b6d4e2befec3ff30fe86329d0600d23))
+* crew images position on desktop devices ([cd7bc18](https://github.com/nicolsam/space-tourism/commit/cd7bc18a7ef47008ef5dbf94b81c80111dea1f98))
+* current active menu item ([2e1d659](https://github.com/nicolsam/space-tourism/commit/2e1d6599fbcaa02a51dc8a35a643fea60c37f54c))
+* default pages ([d9c5340](https://github.com/nicolsam/space-tourism/commit/d9c5340320c93497f9ea6e883cf6931fabb7c592))
+* dynamic background image ([e179b15](https://github.com/nicolsam/space-tourism/commit/e179b1519d8a50503356a0171ce41cdac6e9dd89))
+* dynamic background image ([3d83cca](https://github.com/nicolsam/space-tourism/commit/3d83cca6957a54e7a6a2a9360c887a47c15d7c64))
+* dynamic background image ([fe791f5](https://github.com/nicolsam/space-tourism/commit/fe791f56b2e0caee1f4551a61e862839ac78a351))
+* Explore link to /destination/moon ([0c9dffd](https://github.com/nicolsam/space-tourism/commit/0c9dffd43c9ae0101c9465ae7fca4b32709e5e24))
+* menu not appearing on tablet and mobile devices ([29b5a26](https://github.com/nicolsam/space-tourism/commit/29b5a260080398dde3c2b2c456e003e990830a6b))
+* mobile menu not sending to correct link ([d24c813](https://github.com/nicolsam/space-tourism/commit/d24c8134b379e298f0ba7c2aff3454d3c3156a53))
+* public imports ([14b0ed4](https://github.com/nicolsam/space-tourism/commit/14b0ed44b5b2c888ddc3f62e86b515dbac1d6c95))
+* public imports ([25c0e08](https://github.com/nicolsam/space-tourism/commit/25c0e08a27941af90db052d3d8b48ca3b06e1a51))
+* react-router-dom 404 error on page reload ([d4d9e61](https://github.com/nicolsam/space-tourism/commit/d4d9e6190d944d6b82eb2703f3818b8bc0558005))
