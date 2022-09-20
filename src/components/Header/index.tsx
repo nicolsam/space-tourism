@@ -8,7 +8,7 @@ import * as S from './styles';
 
 const Header = () => {
   return (
-    <div className="w-full md:w-auto pt-5 md:pt-0 h-fit xl:h-1/6 relative top-0 z-50 flex flex-row xl:justify-end items-center xl:items-center">
+    <div className="w-full md:w-auto pt-5 md:pt-0 h-fit xl:h-1/6 relative top-0 z-50 flex flex-row justify-between xl:justify-end items-center xl:items-center">
         <div className="h-full pl-8 xl:hidden">
           <Link to="/" className="h-fit cursor-pointer">
             <img src={Logo} alt="Logo" />
