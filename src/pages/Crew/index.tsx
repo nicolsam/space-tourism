@@ -63,7 +63,7 @@ const Crew = ({ crewmate }: CrewProps) => {
                 </div>
                 
                 <div className="w-full md:h-4/6 xl:h-full md:w-2/4 xl:w-1/3 md:relative flex flex-col items-center xl:items-end xl:self-end">
-                    <img className="w-1/2 md:absolute" src={crewmate.images.png} alt="Crewmate image" />
+                    <img className="w-1/2 md:w-auto md:absolute md:bottom-0" src={crewmate.images.png} alt="Crewmate image" />
                     <S.Divider />
                 </div>
             </div>
