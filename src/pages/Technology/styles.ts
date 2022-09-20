@@ -22,6 +22,13 @@ export const TechDot = styled.div<PersonDotProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: outline .2s;
+
+  &:hover {
+    outline: 1px solid #fff;
+    transition: outline .2s;
+  }
   
   @media (max-width: 375px) {
     width: 3rem;

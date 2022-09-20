@@ -12,4 +12,11 @@ export const PersonDot = styled.div<PersonDotProps>`
   border-radius: 50%;
 
   cursor: pointer;
+
+  transition: background .3s;
+  
+  &:hover {
+    background-color: #87868c;
+    transition: background .3s;
+  }
 `;
