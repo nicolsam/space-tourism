@@ -21,17 +21,17 @@ const optionsInitialValue:IOptions[] = [
     {
         active: false,
         name: 'destination',
-        link: '/destination'
+        link: '/destination/moon'
     },
     {
         active: false,
         name: 'crew',
-        link: '/crew'
+        link: '/crew/douglas-hurley'
     },
     {
         active: false,
         name: 'technology',
-        link: '/technology'
+        link: '/technology/launch-vehicle'
     }
 
 ]
@@ -82,7 +82,7 @@ const Menu = () => {
             <div className="w-3/5 xl:pr-24 2xl:pr-28 3xl:pr-52 bg-white/[.04] backdrop-blur-2xl hidden md:flex gap-5 xl:gap-14 flex-row justify-center xl:justify-end">
                 <Item active={path} link="/"><S.MText>00</S.MText>HOME</Item>  
                 <Item active={path} link="/destination" sublink={data.destinations[0].name.toLowerCase()}><S.MText>01</S.MText>DESTINATION</Item>  
-                <Item active={path} link="/crew" sublink="douglas-hurley"><S.MText>02</S.MText>CREW</Item>  
+                <Item active={path} link="/crew" sublink={convertStringToSlug(data.crew[0].name.toLowerCase())}><S.MText>02</S.MText>CREW</Item>  
                 <Item active={path} link="/technology" sublink={convertStringToSlug(data.technology[0].name)}><S.MText>03</S.MText>TECHNOLOGY</Item>  
             </div>
 
