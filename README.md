@@ -70,4 +70,4 @@ module.exports = {
 
 - Website - [Nicolas Samuel](https://www.nicolsam.space/)
 - Frontend Mentor - [@nicolsam](https://www.frontendmentor.io/profile/nicolsam)
-- Linkedin - [@nicolveras](https://www.linkedin.com/in/nicolveras/)
+- Linkedin - [@nicolveras](https://www.linkedin.com/in/nicolas-samuel-veras/)
